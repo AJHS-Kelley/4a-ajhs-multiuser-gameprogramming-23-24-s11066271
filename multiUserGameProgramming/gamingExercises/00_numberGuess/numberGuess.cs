@@ -1,4 +1,4 @@
-//John Lowney, Number Guess, v0.04
+//John Lowney, Number Guess, v0.05
 /*
 Generate secret number from a range 
 Print game instructions including range and # of guesses allowed.
@@ -69,7 +69,17 @@ namespace numberGuess
             Console.WriteLine("Maximum: " + rangeMax);
             Console.WriteLine("Num. Guesses: " + numGuesses);
 
+            // START THE MATCH
+            while(playerScore != 3 && cpuScore != 3) {
+                // Any code you want to run BEFORE each round goes here
 
+                // Start each round
+                for (int i = 0; i < numAttempts; i++) {
+                    // Code to guess number
+                    
+                }
+
+            }
 
 
 
