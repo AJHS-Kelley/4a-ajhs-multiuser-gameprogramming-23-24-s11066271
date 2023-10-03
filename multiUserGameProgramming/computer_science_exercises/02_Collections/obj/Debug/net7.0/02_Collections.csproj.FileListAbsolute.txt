@@ -1,0 +1,15 @@
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\bin\Debug\net7.0\02_Collections.exe
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\bin\Debug\net7.0\02_Collections.deps.json
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\bin\Debug\net7.0\02_Collections.runtimeconfig.json
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\bin\Debug\net7.0\02_Collections.dll
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\bin\Debug\net7.0\02_Collections.pdb
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.csproj.AssemblyReference.cache
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.AssemblyInfoInputs.cache
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.AssemblyInfo.cs
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.csproj.CoreCompileInputs.cache
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.dll
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\refint\02_Collections.dll
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.pdb
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\02_Collections.genruntimeconfig.cache
+C:\Users\s11066271\Downloads\4a-ajhs-multiuser-gameprogramming-23-24-s11066271\multiUserGameProgramming\computer_science_exercises\02_Collections\obj\Debug\net7.0\ref\02_Collections.dll
