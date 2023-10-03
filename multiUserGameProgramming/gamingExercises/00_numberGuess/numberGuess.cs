@@ -3,7 +3,7 @@
 Generate secret number from a range 
 Print game instructions including range and # of guesses allowed.
     MATCH == first player to score 3 points
-    ROUND == guessing a specific number, until correct or no more attempts.
+    ROUND == guessing a specific number, until correct or no more attempts.              
 Ask player what difficulty they want.
 Player guesses number
 Determine if guess is correct or not
