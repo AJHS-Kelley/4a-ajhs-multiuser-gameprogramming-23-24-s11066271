@@ -1,4 +1,4 @@
-﻿// 02_Collections, John Lowney, 10/3/23, v0.1
+﻿// 02_Collections, John Lowney, 10/3/23, v0.1b
 
 using System;
 
@@ -26,6 +26,10 @@ namespace _02_Collections
             // Print Array Contents -- All elements on single line
             Console.WriteLine("The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+            Console.WriteLine();
+            Console.WriteLine("testScores: \n" + String.Join(", ", testScores));
+            Console.WriteLine();
+            Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
             Console.WriteLine();
 
         }
