@@ -1,4 +1,4 @@
-﻿// 02_Collections, John Lowney, 10/3/23, v0.1c
+﻿// 02_Collections, John Lowney, 10/3/23, v0.1d
 
 using System;
 
@@ -19,7 +19,7 @@ namespace _02_Collections
             */
 
             // Declaring and Defining an Array
-            string[] breakfastFoods = {"Bacon", "Waffles", "Cereal", "Parfait"};
+            string[] breakfastFoods = {"Bacon", "Waffles", "Pancakes", "Cereal", "Parfait"};
             int[] testScores = {95, 100, 25, 15, 27, 35};
             float[] GPA = {3.14f, 2.25f, 1.74f, 1.99f, 099f, 4.25f};
 
@@ -42,7 +42,11 @@ namespace _02_Collections
             Console.WriteLine();
             */
 
-
+            // Determining Array Length
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods.Length);
+            Console.WriteLine("testScores: " + testScores.Length);
+            Console.WriteLine("GPA: " + GPA.Length);
 
 
 
