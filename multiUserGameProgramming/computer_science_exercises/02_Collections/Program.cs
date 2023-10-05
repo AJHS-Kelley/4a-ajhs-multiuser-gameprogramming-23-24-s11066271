@@ -1,4 +1,4 @@
-﻿// 02_Collections, John Lowney, 10/3/23, v0.1d
+﻿// 02_Collections, John Lowney, 10/3/23, v0.2A
 
 using System;
 
@@ -48,9 +48,17 @@ namespace _02_Collections
             Console.WriteLine("testScores: " + testScores.Length);
             Console.WriteLine("GPA: " + GPA.Length);
 
+            // Accessing Array Elements -- use the index!
+            Console.WriteLine("The first element in each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[0]);
+            Console.WriteLine("testScores: " + testScores[0]);
+            Console.WriteLine("GPA: " + GPA[0]);
 
-
-
+            // Access Last Element
+            Console.WriteLine("The first element in each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[breakfastFoods.Length - 1]);
+            Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
+            Console.WriteLine("GPA: " + GPA[GPA.Length - 1]);
 
 
 
