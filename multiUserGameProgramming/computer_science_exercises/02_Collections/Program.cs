@@ -1,4 +1,4 @@
-﻿// 02_Collections, John Lowney, 10/3/23, v0.2A
+﻿// 02_Collections, John Lowney, 10/3/23, v0.2b
 
 using System;
 
@@ -60,6 +60,12 @@ namespace _02_Collections
             Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
             Console.WriteLine("GPA: " + GPA[GPA.Length - 1]);
 
+            // PWYOC 
+            // v0.2b -- Access the third element in each array and print to the screen
+            Console.WriteLine("The third element in each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[2]);
+            Console.WriteLine("testScores: " + testScores[2]);
+            Console.WriteLine("GPA: " + GPA[2]);
 
 
         }
