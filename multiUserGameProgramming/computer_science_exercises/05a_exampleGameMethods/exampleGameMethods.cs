@@ -1,11 +1,10 @@
-//John Lowney, exampleGameMethods, v1.0
+//John Lowney, exampleGameMethods, v1.1
 using System;
 
 namespace exampleGameMethods
 {
     class exampleGameMethods
     {
-        
         static int weaponSelect(int num)
         {            
                 if (num == 1) {
@@ -55,20 +54,36 @@ namespace exampleGameMethods
         }    
         static string getName()
         {
-            Pass
+            Console.WriteLine("Please type the name you wish to be called.");
+            string playerName = Console.ReadLine();
+            return playerName;
         }
 
-        static int updateScore()
+        static void checkForWinner(int currentPlayerHealth = 100, int currentEnemyHealth = 100)
         {
-            Pass
+            if (currentPlayerHealth == 0 && currentEnemyHealth > 0) {
+                Console.WriteLine("Game Over: You Lose")
+            } else if (currentEnemyHealth == 0 && currentPlayerHealth > 0)
+                Console.WriteLine("Game Over: You Win!")
         }
         static void Main(string[] args)
         {
+            getName();
+
             Console.WriteLine("Please Select a Weapon.\n Type '1' for Sword, '2' for Axe, '3' for Blunderbuss, or '4' for Fist."); 
             int selectedWeapon = Convert.ToInt32(Console.ReadLine());
-            int balls = weaponSelect(selectedWeapon);
-            float nerd = getStat(1, balls);
-            Console.WriteLine(nerd);
+            weaponSelect(selectedWeapon);
+
+            Console.WriteLine("Please Select a Defense Item.\n Type '1' for Shield, '2' for Percision Shield, '3' for Magic Spell, '4' to dodge, or '5' for your arm."); 
+            int selectedDefense = Convert.ToInt32(Console.ReadLine());
+            defenseSelect(selectedDefense);
+
+            Console.WriteLine("Type 1 or 2 for attack or defense stat")
+            int typeInput = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Type the number of the item you want from before to see its stat")
+            int numInput = Convert.ToInt32(Console.ReadLine());
+            int statOutput = getStat(typeInput, numInput);
+            Console.WriteLine(statOutput);
   
 
         }
