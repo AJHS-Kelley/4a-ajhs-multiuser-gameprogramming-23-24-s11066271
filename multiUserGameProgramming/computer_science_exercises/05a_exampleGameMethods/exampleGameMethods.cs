@@ -1,62 +1,76 @@
-//John Lowney, Example Game Methods, v0.3
+//John Lowney, exampleGameMethods, v1.0
 using System;
 
 namespace exampleGameMethods
 {
     class exampleGameMethods
     {
-        int score = 0;
-        static void startGame() //resets the score to 0 and allows player to choose difficulty. the difficulty effects the chance of scoring when a player takes a shot
-        {
-            int score = 0;
-            Console.WriteLine("Please select difficulty")
-            int difficulty = Convert.ToInt32(Console.ReadLine("Type '1' for easy, '2' for medium, or '3' for hard."));
-            if (difficulty == 1) {
-                stats = 
-            } else if (difficulty == 2) {
-
-            } else if (difficulty == 3) {
-
-            } else {
-
+        
+        static int weaponSelect(int num)
+        {            
+                if (num == 1) {
+                    Console.WriteLine("You selected the Sword!");
+                } else if (num == 2) {
+                    Console.WriteLine("You selected the Axe!");
+                } else if (num == 3) {
+                    Console.WriteLine("You selected the Blunderbuss!");
+                } else if (num == 4) {
+                    Console.WriteLine("You selected your Fist!");
+                } else {
+                    Console.WriteLine("You picked something not on the list. Now you have to use your fists");
+                    num = 4;
+                }
+            return num;
+        }    
+        static float getStat(int type, int num) //type is weapons or defenseItems, 1 or 2 respectively. num is the index of the item in its list, starting from 0. 
+        { //i think theres about 10 different easier ways to do this, but it works.
+            float itemStat = 1.0F;
+            float[] weaponStats = {1.67F, 1.8F, 2.0F, 1.0F};
+            float[] defenseStats = {0.6F, 0.2F, 0.5F, 0.0F, 1.0F};
+            if (type == 1) {
+                itemStat = weaponStats[num];
+            } else if (type == 2) {
+                itemStat = defenseStats[num];
             }
+            return itemStat;
         }
 
-        static void shootBall()
+        static int defenseSelect(int num)
+        {            
+                if (num == 1) {
+                    Console.WriteLine("You selected the Shield!");
+                } else if (num == 2) {
+                    Console.WriteLine("You selected the Percision Shield!");
+                } else if (num == 3) {
+                    Console.WriteLine("You selected the Magic Spell!");
+                } else if (num == 4) {
+                    Console.WriteLine("You selected to dodge!");
+                } else if (num == 5) {
+                    Console.WriteLine("You selected Your Arm");
+                } else {
+                    Console.WriteLine("You picked something not on the list. Now you have to use your arm");
+                    num = 5;
+                }
+            return num;
+        }    
+        static string getName()
         {
-            Pass;
+            Pass
         }
 
-        static bool coinFlip() 
-        //Flips a coin and lets the player guess it. If the player is right, they go first.
-        //If they're wrong, the computer goes first.
+        static int updateScore()
         {
-            Random rndNum = new Random();
-            bool goesFirst = True;
-            int faceUp = rndNum.Next(1, 2);
-            int playerGuess = Convert.ToInt32(Console.ReadLine("Type '1' to guess heads, or '2' to guess tails."));
-            if (playerGuess == faceUp) {
-                Console.WriteLine("You guessed correctly, and will start with the ball.")
-                goesFirst = True
-            }
-            else {
-                Console.WriteLine("You guessed wrong. The computer will start with the ball.")
-                goesFirst = False
-            }
-            return goesFirst;        
-        }
-
-        //Allows the player to pass the ball to a random teammate. The player then takes control of that teammate. 
-        static void passBall()
-        {
-            string[] teammates = {"Ronaldo", "Messi", "Rob"};
-            int targetPlayer = Convert.ToInt32(Console.ReadLine("Type '1' to pass to Ronaldo, '2' to pass to Messi, or '3' to pass to Rob."));
-
+            Pass
         }
         static void Main(string[] args)
         {
-            coinFlip();
-        }
-    }    
-}
+            Console.WriteLine("Please Select a Weapon.\n Type '1' for Sword, '2' for Axe, '3' for Blunderbuss, or '4' for Fist."); 
+            int selectedWeapon = Convert.ToInt32(Console.ReadLine());
+            int balls = weaponSelect(selectedWeapon);
+            float nerd = getStat(1, balls);
+            Console.WriteLine(nerd);
+  
 
+        }
+        }  
+    }
