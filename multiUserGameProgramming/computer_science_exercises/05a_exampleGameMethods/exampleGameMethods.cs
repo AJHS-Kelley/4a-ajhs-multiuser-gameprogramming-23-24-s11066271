@@ -1,34 +1,47 @@
-//John Lowney, Example Game Methods, v0.2
+//John Lowney, Example Game Methods, v0.3
 using System;
 
 namespace exampleGameMethods
 {
     class exampleGameMethods
     {
-        static void MethodOne()
+        static void startGame()
         {
-            
+            Pass;
         }
 
-        static void MethodTwo()
+        static void shootBall()
         {
-            
+            Pass;
         }
 
-        static int DiceRoll()
+        static bool coinFlip() 
+        //Flips a coin and lets the player guess it. If the player is right, they go first.
+        //If they're wrong, the computer goes first.
         {
-            int diceRoll = 0;
-            numDice = System.Convert.ToInt32(Console.ReadLine());
-            while(i < numDice){
             Random rndNum = new Random();
-            diceRoll = rndNum.Next(1, 6);
-            Console.WriteLine("You rolled a " + diceRoll);
-            i++;
+            bool goesFirst = True;
+            int faceUp = rndNum.Next(1, 2);
+            int playerGuess = Convert.ToInt32(Console.ReadLine("Type '1' to guess heads, or '2' to guess tails."));
+            if (playerGuess == faceUp) {
+                Console.WriteLine("You guessed correctly, and will start with the ball.")
+                goesFirst = True
             }
+            else {
+                Console.WriteLine("You guessed wrong. The computer will start with the ball.")
+                goesFirst = False
+            }
+            return goesFirst;        
+        }
+
+        static void passBall()
+        {
+            Pass;
         }
         static void Main(string[] args)
         {
-            DiceRoll();
+            coinFlip();
         }
-    }
+    }    
 }
+
