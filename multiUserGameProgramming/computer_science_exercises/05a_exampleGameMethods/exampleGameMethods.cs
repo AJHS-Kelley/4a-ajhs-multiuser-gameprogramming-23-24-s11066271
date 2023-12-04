@@ -1,4 +1,4 @@
-//John Lowney, exampleGameMethods, v1.1
+//John Lowney, exampleGameMethods, v1.2
 using System;
 
 namespace exampleGameMethods
@@ -59,12 +59,18 @@ namespace exampleGameMethods
             return playerName;
         }
 
-        static void checkForWinner(int currentPlayerHealth = 100, int currentEnemyHealth = 100)
+        static bool checkForKey()
         {
-            if (currentPlayerHealth == 0 && currentEnemyHealth > 0) {
-                Console.WriteLine("Game Over: You Lose")
-            } else if (currentEnemyHealth == 0 && currentPlayerHealth > 0)
-                Console.WriteLine("Game Over: You Win!")
+            
+                    }
+        
+        static float attack(float weaponMultiplier)
+        {
+            Random rndNum = new Random();
+            float damageDealt = rndNum.Next(1, 10);
+            damageDealt = damageDealt * weaponMultiplier;
+            return damageDealt;
+
         }
         static void Main(string[] args)
         {
@@ -78,14 +84,16 @@ namespace exampleGameMethods
             int selectedDefense = Convert.ToInt32(Console.ReadLine());
             defenseSelect(selectedDefense);
 
-            Console.WriteLine("Type 1 or 2 for attack or defense stat")
+            Console.WriteLine("Type 1 or 2 for attack or defense stat");
             int typeInput = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Type the number of the item you want from before to see its stat")
+            Console.WriteLine("Type the number of the item you want from before to see its stat");
             int numInput = Convert.ToInt32(Console.ReadLine());
-            int statOutput = getStat(typeInput, numInput);
-            Console.WriteLine(statOutput);
-  
+            float statOutput = getStat(typeInput, numInput);
+            Console.WriteLine("This item has a stat value of " + statOutput);
 
+            float attackMultipier = getStat(1, selectedWeapon);
+            float thing = attack(attackMultipier);
+            Console.WriteLine(thing);
         }
         }  
     }
