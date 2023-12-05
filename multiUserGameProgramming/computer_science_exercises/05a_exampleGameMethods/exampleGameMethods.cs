@@ -1,4 +1,4 @@
-//John Lowney, exampleGameMethods, v1.2
+//John Lowney, exampleGameMethods, v1.3
 using System;
 
 namespace exampleGameMethods
@@ -58,11 +58,6 @@ namespace exampleGameMethods
             string playerName = Console.ReadLine();
             return playerName;
         }
-
-        static bool checkForKey()
-        {
-            
-                    }
         
         static float attack(float weaponMultiplier)
         {
@@ -70,7 +65,25 @@ namespace exampleGameMethods
             float damageDealt = rndNum.Next(1, 10);
             damageDealt = damageDealt * weaponMultiplier;
             return damageDealt;
+        }
 
+        static bool checkForItem(string itemName, float damageDealt = 0)
+        {
+            bool trueFalse = false;
+            string[] playerInventory = {"Apple", "Reflector", "Med Kit", "", ""};
+            if (damageDealt > 10) {
+                playerInventory[4] = "Key";
+            }            
+            for (int i = 0; i < playerInventory.Length; i++) {
+                if (playerInventory[i] == itemName) {
+                    trueFalse = true;
+                    Console.WriteLine("Hi");
+                } else {
+                    trueFalse = false;
+                    Console.WriteLine("Bye");
+                }
+            }
+            return trueFalse;
         }
         static void Main(string[] args)
         {
@@ -86,14 +99,14 @@ namespace exampleGameMethods
 
             Console.WriteLine("Type 1 or 2 for attack or defense stat");
             int typeInput = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Type the number of the item you want from before to see its stat");
+            Console.WriteLine("Type the number of the item you want to see the stat of.");
             int numInput = Convert.ToInt32(Console.ReadLine());
             float statOutput = getStat(typeInput, numInput);
             Console.WriteLine("This item has a stat value of " + statOutput);
 
             float attackMultipier = getStat(1, selectedWeapon);
-            float thing = attack(attackMultipier);
-            Console.WriteLine(thing);
+            float damageValue = attack(attackMultipier);
+            checkForItem("Key", damageValue);
         }
         }  
     }
