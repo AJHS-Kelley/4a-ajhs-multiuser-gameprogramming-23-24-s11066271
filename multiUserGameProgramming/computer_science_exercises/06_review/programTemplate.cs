@@ -1,4 +1,4 @@
-//John Lowney, Review, v0.02
+//John Lowney, Review, v0.03
 using System;
 
 namespace UPDATEFOREACHPROGRAM
@@ -57,6 +57,37 @@ namespace UPDATEFOREACHPROGRAM
             Convert.ToDouble(myFloat) // Double
             Convert.ToInt32(firstDouble) // Integar
             Convert.ToInt64(myInt) // Long
+
+            // Switch Statement
+            int dayOfWeek = 5;
+            switch (dayOfWeek)
+            {
+                case 1:
+                    Console.WriteLine("The day is Sunday.\n");
+                    break;
+                case 2:
+                    Console.WriteLine("The day is Monday.\n");
+                    break;
+                case 3:
+                    Console.WriteLine("The day is Tuesday.\n");
+                    break;
+                case 4:
+                    Console.WriteLine("The day is Wednesday.\n");
+                    break;
+                case 5:
+                    Console.WriteLine("The day is Thursday.\n");
+                    break;
+                case 6:
+                    Console.WriteLine("The day is Friday.\n");
+                    break;
+                case 7:
+                    Console.WriteLine("The day is Saturday.\n");
+                    break;
+                default:
+                    Console.WriteLine("No match found.\n");
+                    break;
+
+            }
         }
     }
 }
