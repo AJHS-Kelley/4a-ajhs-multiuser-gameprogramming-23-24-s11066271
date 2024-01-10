@@ -1,4 +1,4 @@
-//John Lowney, Review, v0.01
+//John Lowney, Review, v0.02
 using System;
 
 namespace UPDATEFOREACHPROGRAM
@@ -19,11 +19,11 @@ namespace UPDATEFOREACHPROGRAM
 
             // Float -- Stores up to 6-7 decimal digits.
             // Float = 4 Bytes
-            float decimal = 6.4F;
+            float myFloat = 6.4f;
 
             // Double -- Stores up to 15 decimal digits
             // Double = 8 Bytes
-            double myDouble = 8.340830850824D;
+            double firstDouble = 8.340830850824D;
 
             // Boolean -- true / false
             // Boolean = 1 bit
@@ -38,6 +38,25 @@ namespace UPDATEFOREACHPROGRAM
             // Single character, in SINGLE QUOTES ' '
             // 2-bytes
             char myChar = 'C';
+
+            // Type Casting
+            // IMPLICIT -- Happens automatically when going smaller -> larger
+
+            int myInt = 9;
+            double myDouble = myInt;
+            Console.WriteLine(myDouble);
+
+            // char -> int -> long -> float -> double
+            // EXPLICIT -- Must be done manually when going larger -> smaller
+            // double -> float -> long -> int -> char
+            double exampleDouble = 9.389324538D;
+            int anotherInt = (int) myDouble;
+
+            // Converstion Methods
+            Convert.ToString(number) // String
+            Convert.ToDouble(myFloat) // Double
+            Convert.ToInt32(firstDouble) // Integar
+            Convert.ToInt64(myInt) // Long
         }
     }
 }
